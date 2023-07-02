@@ -4,6 +4,10 @@ import { useState, useEffect } from "react";
 import Title from "@/Components/Title";
 import Footer from "@/Components/Footer";
 
+
+//Seo
+import Seo from "@/Components/Seo";
+
 const Home = () => {
   const [schema, setSchema] = useState("");
   const [typescriptSchema, setTypescriptSchema] = useState("");
@@ -97,6 +101,7 @@ const Home = () => {
 
   return (
     <div>
+      <Seo />
       <Title />
       <div className="px-10 py-1">
         <div className="grid grid-cols-12 items-center gap-4">
